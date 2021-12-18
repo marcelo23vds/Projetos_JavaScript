@@ -12,6 +12,10 @@ body {
     background-color: rgb(255, 242, 129);
 }
 
+p {
+    text-transform: uppercase;
+}
+
 button {
     height: 40px;
     width: 40px;
@@ -22,6 +26,11 @@ button {
     font-size: 16pt;
     font-weight: 600;
     text-align: center;
+}
+
+button:hover {
+    background: yellow;
+    transform: scale(1.1);
 }
 
 #counter {
