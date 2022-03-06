@@ -14,7 +14,7 @@ function calcular() {
         let p = Number(peso.value)
 
         a *= a
-        let imc = p / a
+        let imc = (p / a)
 
         res.innerHTML = `${n}, o seu IMC é ${imc.toFixed(2)}<br>`
 
