@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Calculadora - IMC</h1>
+    </header>
+
+    <section>
+        <div>
+            <p>Nome: <input type="text" name="nome" class="entrada" id="txtnome"></p>
+        </div>
+        <div>
+            <p>Altura: <input type="number" name="altura" class="entrada" id="txtaltura"></p>
+        </div>
+        <div>
+            <p>Peso: <input type="number" name="peso" class="entrada" id="txtpeso"></p>
+        </div>
+        <div>
+            <input type="button" value="Calcular" id="botao" onclick="calcular()">
+        </div>
+        <div id="res">
+            Preencha os campos acima!
+        </div>
+    </section>
+
+    <footer>
+        <p>by Marcelo Vieira</p>
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
