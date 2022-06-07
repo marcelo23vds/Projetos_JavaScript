@@ -1,0 +1,22 @@
+body {
+    background-color: rgb(255, 253, 223);
+    font: normal 20pt arial;
+}
+
+header, main, footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    padding-top: 15px;
+    font-size: small;
+    font-style: italic;
+}
+
+.botoes {
+    width: 80px;
+    height: 40px;
+}
+
