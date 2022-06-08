@@ -1,0 +1,74 @@
+body {
+    align-items: center;
+    background: linear-gradient(45deg, #f701ff 0%,#1100ff 100%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.calculator {
+    background: rgb(255, 255, 255);
+    border-radius: 2px;
+    padding: 10px;
+    width: 300px;
+    margin: auto;
+    text-align: right;
+}
+
+#display {
+    background-color: rgb(194, 194, 194);
+    color: #000000;
+    height: 30px;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    font-size: 2.5rem;
+}
+
+.calculator_buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px 10px;
+    grid-template-areas: 
+        "limpar backspace operador_divisao operador_multiplicar"
+        "tecla_sete tecla_oito tecla_nove operador_subtracao" 
+        "tecla_quatro tecla_cinco tecla_seis operador_adicao"
+        "tecla_um tecla_dois tecla_tres igual"
+        "tecla_zero tecla_zero decimal igual"
+        ;
+}
+
+.button{
+    background-color: rgb(194, 194, 194);
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 2px;
+    font-size: 1.5rem;
+    border: none;
+}
+
+button:hover{
+    background-color: #de1af0;
+    color: white;
+}
+
+#limpar {grid-area: limpar;}
+#backspace {grid-area: backspace;}
+#operador_divisao {grid-area: operador_divisao;}
+#operador_multiplicar {grid-area: operador_multiplicar;}
+#tecla_sete {grid-area: tecla_sete;}
+#tecla_oito {grid-area: tecla_oito;}
+#tecla_nove {grid-area: tecla_nove;}
+#operador_subtracao {grid-area: operador_subtracao;}
+#tecla_quatro {grid-area: tecla_quatro;}
+#tecla_cinco {grid-area: tecla_cinco;}
+#tecla_seis {grid-area: tecla_seis;}
+#operador_adicao {grid-area: operador_adicao;}
+#tecla_um {grid-area: tecla_um;}
+#tecla_dois {grid-area: tecla_dois;}
+#tecla_tres {grid-area: tecla_tres;}
+#igual {grid-area: igual;}
+#tecla_zero {grid-area: tecla_zero;}
+#decimal {grid-area: decimal;}
